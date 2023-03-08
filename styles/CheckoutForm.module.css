@@ -1,0 +1,26 @@
+.body{
+    background-color: #AC94F4;
+    padding: 40px;
+    border-radius: 5px;
+}
+.body h2{
+    text-align: center;
+    color:#FFFFFFA6 ;
+}
+.body button{
+    background-color: #371F76;
+    color: white;
+    border-radius: 10PX;
+    align-items: center;
+}
+.body .label{
+    font-weight: 500;
+    padding: 5px;
+    color:#FFFFFFA6;
+}
+.body .input{
+    background-color:#0000001A ;
+    border-radius: 5px;
+    border: 1px solid #FFFFFFA6;
+
+}

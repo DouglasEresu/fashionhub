@@ -1,0 +1,21 @@
+.title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 2rem 1rem;
+  }
+  
+  .container {
+
+    width: 100vw;
+    padding: 0 0.1rem;
+    margin-bottom: 2rem;
+  }
+
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem 0.5rem;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    place-items: center;
+  }
