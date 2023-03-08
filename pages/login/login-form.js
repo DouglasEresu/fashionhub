@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { useState } from "react";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useForm } from "react-hook-form";

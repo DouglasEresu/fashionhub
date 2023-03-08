@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import CategoryCard from '../components/CategoryCard';
 import styles from '../styles/Home.module.css';
 

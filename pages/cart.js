@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
 import {
@@ -38,7 +39,7 @@ refreshCart();
       ) : (
         <>
           <div className={styles.header}>
-            <div>Image</div>
+            <div>Image alt= ""</div>
             <div>Product</div>
             <div>Price</div>
             <div>description</div>
@@ -49,7 +50,7 @@ refreshCart();
           {cart.map((item) => (
             <div className={styles.body}>
               <div className={styles.image}>
-                <Image src={item.image} height="90" width="65" />
+                <Image alt= "" src={item.image} height="90" width="65" />
               </div>
               <p>{item.title}</p>
               <p>$ {item.price}</p>

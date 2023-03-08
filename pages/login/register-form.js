@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 // import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";

@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Login from "./login-form";

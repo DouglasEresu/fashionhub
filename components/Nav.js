@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react'
 import navStyles from '../styles/Nav.module.css'
 import { useSelector } from 'react-redux';

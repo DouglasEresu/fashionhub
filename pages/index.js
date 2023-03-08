@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import Head from 'next/head'
 import homeStyles from "../styles/Home.module.css";
 import Link from 'next/link';

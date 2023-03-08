@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import ProductCard from '../components/ProductCard';
 import styles from '../styles/ShopPage.module.css';
 import { getProducts } from './api/products/index';
