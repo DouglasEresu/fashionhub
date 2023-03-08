@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 import Link from "next/link";
 import Button from '@mui/material/Button';
 import GoogleIcon from '@mui/icons-material/Google';
-
+import {app} from '../../config/firebaseConfig'
 
 const Login = () => {
 const schema = yup.object().shape({

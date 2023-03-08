@@ -17,7 +17,7 @@ const CheckoutForm = () => {
   const[newCity, setNewCity] =useState("");
   const[newAddress, setAddress] =useState("");
 
-  const createOrder =async () =>{
+   const createOrder =async () =>{
 
     {cart.map(async(item) =>(
 

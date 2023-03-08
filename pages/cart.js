@@ -9,7 +9,7 @@ import {
 import styles from '../styles/CartPage.module.css';
 import Link from 'next/link';
 import { Button, PopoverBody, UncontrolledPopover } from "reactstrap";
-import { createOrder } from '../components/checkout/CheckoutForm'
+// import { createOrder } from '../components/checkout/CheckoutForm'
 
 const CartPage = () => {
 
@@ -17,14 +17,14 @@ const CartPage = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-function refreshCart(cart){
-if(createOrder){
-  {cart.length === 0};
-}else{
-  getTotalPrice
-}
-};
-refreshCart();
+// function refreshCart(cart){
+// if(createOrder){
+//   {cart.length === 0};
+// }else{
+//   getTotalPrice
+// }
+// };
+// refreshCart();
   const getTotalPrice = () => {
     return cart.reduce(
       (accumulator, item) => accumulator + item.quantity * item.price,
