@@ -5,7 +5,7 @@ import {
   incrementQuantity,
   decrementQuantity,
   removeFromCart,
-} from '../redux/cart.slice';
+} from '../redux/cart.Slice';
 import styles from '../styles/CartPage.module.css';
 import Link from 'next/link';
 import { Button, PopoverBody, UncontrolledPopover } from "reactstrap";
