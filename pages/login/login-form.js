@@ -57,7 +57,7 @@ const schema = yup.object().shape({
         </span>
       )}
 
-      <TextField id="standard-basic" label="Standard" variant="standard" 
+      <TextField id="standard-basic" label="Email" variant="standard" 
       name="email"
         value={formData.email}
         placeholder="Email"
@@ -66,7 +66,7 @@ const schema = yup.object().shape({
       />
         
       
-      <TextField id="standard-basic" label="Standard" variant="standard" 
+      <TextField id="standard-basic" label="Password" variant="standard" 
       name="password"
         value={formData.password}
         placeholder="Password"
