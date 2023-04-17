@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React from 'react'
+import React, {useState} from 'react'
 import navStyles from '../styles/Nav.module.css'
 import { useSelector } from 'react-redux';
 import Link from 'next/link'
@@ -7,8 +7,15 @@ import { useRouter } from 'next/router';
 
 function Nav() {
 
-  
-  
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(true);
+  }, []);
+
+   const handleToggle = () =>{
+   setIsOpen(!isOpen);
+   }
 
   const router =useRouter();
   const currentRoute = router.pathname;
@@ -17,10 +24,7 @@ function Nav() {
     const cart = useSelector((state) => state.cart);
   
     const getItemsCount = () => {
-      window.addEventListener('load', function() {
-    var navbar = document.querySelector('.nav');
-    navbar.classList.add('loaded');
-  });
+      
       return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
     };
   
@@ -28,13 +32,15 @@ function Nav() {
     <div className={navStyles.nav}>
       
     <nav className='shadow-lg p-3 mb-5 bg-body rounded'>
-      <ul className=' d-flex justify-content-center'>
-      <li className='mx-5 nav'>
-          <Link href="/">
+    <button className="menu-button" onClick={handleToggle}>
+        Menu
+      </button>
+       <Link href="/">
             <a className={currentRoute ==="/" }>
               <span className={navStyles.logo}>TFH</span> 
               </a></Link>
-          </li>
+      <ul className={`menu ${isOpen ? 'open' : ''}`}> 
+          
           <li className='mx-5 nav'>
           <Link href="/home">
           <a className={currentRoute ==="/home" ? "active" : "non-active"}>
@@ -93,7 +99,19 @@ function Nav() {
             flex-direction: column;
             align-items: flex-start;
           }
-
+          .menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+          }
+          
+          .menu.open {
+            max-height: 300px;
+          }
           nav a{
             text-decoration: none;
             padding: 5px 10px;
