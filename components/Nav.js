@@ -64,8 +64,10 @@ function Nav() {
         }
         
         nav ul {
+          max-height: 200px;
           display: flex;
           overflow-y: hidden;
+          overflow-x: hidden;
           list-style: none;
           margin: 0;
           
