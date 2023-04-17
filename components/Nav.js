@@ -88,7 +88,7 @@ function Nav() {
         
           ul {
             flex-direction: column;
-            max-height: 200px;
+            max-height: 400px;
             overflow-y: hidden;
             trasition: all 1.5s:
           }
