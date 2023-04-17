@@ -73,6 +73,23 @@ function Nav() {
           margin-right: 0.9rem;
         }
         
+        @media (max-width: 500px) {
+          nav {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          ul {
+            flex-direction: column;
+          }
+        
+          li {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+          }
+        }
+      
+        
         .active{
           transition: color 0.25s ease, background 0.25s ease;
           background: linear-gradient(to right, #8e2de2, #4a00e0);
