@@ -7,10 +7,7 @@ import { useRouter } from 'next/router';
 
 function Nav() {
 
-  Nav.addEventListener('load', function() {
-    var navbar = document.querySelector('.nav');
-    navbar.classList.add('loaded');
-  });
+  
   
 
   const router =useRouter();
@@ -20,6 +17,10 @@ function Nav() {
     const cart = useSelector((state) => state.cart);
   
     const getItemsCount = () => {
+      window.addEventListener('load', function() {
+    var navbar = document.querySelector('.nav');
+    navbar.classList.add('loaded');
+  });
       return cart.reduce((accumulator, item) => accumulator + item.quantity, 0);
     };
   
