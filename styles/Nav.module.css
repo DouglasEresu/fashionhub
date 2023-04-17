@@ -13,27 +13,29 @@
     align-items: center;
     list-style: none;
 }
-.nav ul li a {
-    text-decoration: none;
-    margin: 20px 50px;
-    cursor: pointer;
-} */
+ */
 /* .main{
     position: fixed;
     width: 100%;
     z-index: 1;
     margin-bottom: 500px;
 } */
-/* .nav ul {
+.nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     list-style: none;
-} */
+}
+.nav ul li a {
+    text-decoration: none;
+    margin: 20px 50px;
+
+}
 .nav{
+    display: flex;
     cursor: pointer;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .logo{

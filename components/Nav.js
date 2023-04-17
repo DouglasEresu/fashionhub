@@ -61,14 +61,7 @@ function Nav() {
           padding:5px;
           height:100%;
         }
-        .nav ul li a {
-          text-decoration: none;
-          gap: 2.5rem 0.5rem;
-          grid-template-columns: 2fr 2fr 2fr 2fr;
-          place-items: center;
-          color: rgb(92, 59, 122);
-          margin-left: 100px;
-      } 
+        
         .active{
           background: linear-gradient(to right, #8e2de2, #4a00e0);
           color:white;
