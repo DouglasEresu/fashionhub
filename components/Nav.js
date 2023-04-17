@@ -60,10 +60,12 @@ function Nav() {
           text-decoration:none;
           padding:5%;
           font-size:25px;
+          font-weight: 600
         }
         
         nav ul {
           display: flex;
+          overflow-y: hidden;
           list-style: none;
           margin: 0;
           
@@ -80,7 +82,6 @@ function Nav() {
           }
 
           nav a{
-            font-weight: 400
             font-size: 20px;
             color: #072731
           }
@@ -88,9 +89,8 @@ function Nav() {
         
           ul {
             flex-direction: column;
-            max-height: 400px;
-            overflow-y: hidden;
-            trasition: all 1.5s:
+            max-height: 300px;
+            transition: all 1.5s:
           }
         
           li {
