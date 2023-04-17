@@ -25,7 +25,7 @@ function Nav() {
       <li className='mx-5 nav'>
           <Link href="/">
             <a className={currentRoute ==="/" }>
-              <span className={navStyles.logo}>FASHION HUB</span> 
+              <span className={navStyles.logo}>TFH</span> 
               </a></Link>
           </li>
           <li className='mx-5 nav'>
