@@ -24,7 +24,7 @@
 } */
 .nav{
     width: auto;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
