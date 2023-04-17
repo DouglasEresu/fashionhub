@@ -6,8 +6,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 
 function Nav() {
-
-  window.addEventListener('load', function() {
+var nav = document.getElementById('nav')
+  nav.addEventListener('load', function() {
     var navbar = document.querySelector('.nav');
     navbar.classList.add('loaded');
   });
