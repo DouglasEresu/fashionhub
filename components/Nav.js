@@ -47,7 +47,7 @@ function Nav() {
             </a></Link>
           </li>
           <li className='mx-5 nav'>
-            <Link href="/cart"><p className={navStyles.nav}>
+            <Link href="/cart"><p>
             <a className={currentRoute ==="/cart" ? "active" : "non-active"}>
               cart  ({getItemsCount()})</a></p>
               </Link>
@@ -58,7 +58,7 @@ function Nav() {
         {`
         nav a {
           text-decoration:none;
-          padding:5px;
+          padding:5%;
           height:100%;
         }
         

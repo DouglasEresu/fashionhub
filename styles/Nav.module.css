@@ -25,9 +25,9 @@
 .nav{
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    list-style: none;
     cursor: pointer;
 }
 .logo{
