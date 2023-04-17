@@ -91,8 +91,8 @@ function Nav() {
         
           ul {
             flex-direction: column;
-            max-height: 300px;
-            transition: all 1.5s:
+            max-height: 360px;
+            transition: all 3.5s:
           }
         
           li {
