@@ -59,7 +59,7 @@ function Nav() {
         nav a {
           text-decoration:none;
           padding:5%;
-          font-size:10px;
+          font-size:25px;
         }
         
         nav ul {
