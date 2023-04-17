@@ -12,8 +12,8 @@ export default function Home() {
       </Head>
 
       <div className={homeStyles.home}>
-        <span  className={homeStyles.title}><span>FASHION</span><hr className={homeStyles.divider}/> HUB </span>
-       <u><h1 className={homeStyles.text}>  Find your style!</h1></u> 
+        <span  className={homeStyles.title}><span>TWAMBALE</span><hr className={homeStyles.divider}/>FASHION HUB </span>
+       <u>Fi<h1 className={homeStyles.text}>nd your style!</h1></u> 
         <Link href="/home">Shop Now</Link>
       </div>
     </>
