@@ -62,7 +62,19 @@ function Nav() {
           height:100%;
         }
         
+        nav ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      
+        nav li {
+          margin-right: 1rem;
+        }
+        
         .active{
+          transition: color 0.25s ease, background 0.25s ease;
           background: linear-gradient(to right, #8e2de2, #4a00e0);
           color:white;
           border-radius:15px;
