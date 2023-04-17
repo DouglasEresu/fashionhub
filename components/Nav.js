@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import navStyles from '../styles/Nav.module.css'
 import { useSelector } from 'react-redux';
 import Link from 'next/link'
