@@ -17,13 +17,13 @@
     margin-left: 4rem;
   }
   .title {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 1000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* text-shadow: 0 0 60px rgba(22, 8, 8, 0.2); */
     background: linear-gradient(310deg, #59d6d6,#fa437ade);
     opacity: 1;
-    color: #09e0e0;
+    color: #1c1d1d;
     border-radius: 15%;
     animation-name: myAnimation;
     animation-direction: normal;
@@ -38,11 +38,12 @@
     
   }
   .title span{
-    color: #000000;
+    font-size: 60px;
+    color: #072731;
     opacity: 1;
   }
   .text {
-    color: #ffffff;
+    color: #a5e2ff;
     font-size: 40px;
     font-weight: 500;
     margin-top: 30px;
