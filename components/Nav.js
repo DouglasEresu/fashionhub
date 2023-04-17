@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 
 function Nav() {
 
-  this.addEventListener('load', function() {
+  Nav.addEventListener('load', function() {
     var navbar = document.querySelector('.nav');
     navbar.classList.add('loaded');
   });
