@@ -70,7 +70,7 @@ function Nav() {
         }
       
         nav li {
-          margin-right: 1rem;
+          margin-right: 0.9rem;
         }
         
         .active{
