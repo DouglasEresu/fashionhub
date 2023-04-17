@@ -59,6 +59,7 @@ function Nav() {
         nav a {
           text-decoration:none;
           padding:5%;
+          font-size:10px;
         }
         
         nav ul {
@@ -77,6 +78,7 @@ function Nav() {
             flex-direction: column;
             align-items: flex-start;
           }
+          
         
           ul {
             flex-direction: column;

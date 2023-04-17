@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className={homeStyles.home}>
         <span  className={homeStyles.title}><span>TWAMBALE</span><hr className={homeStyles.divider}/>FASHION HUB </span>
-       <u><h1 className={homeStyles.text}>  Find your style!</h1></u> 
+       <h1 className={homeStyles.text}>   Find your style!</h1>
         <Link href="/home">Shop Now</Link>
       </div>
     </>
