@@ -72,21 +72,10 @@ function Nav() {
           margin-right: 0.9rem;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 400px) {
           nav {
-            flex-direction: column;
-            align-items: flex-start;
-          }
-        
-          ul {
-            flex-direction: column;
-          }
-        
-          li {
-            margin-right: 0;
-            margin-bottom: 1rem;
-          }
-        }
+            display: flex;
+            width: 100%
       
         
         .active{
