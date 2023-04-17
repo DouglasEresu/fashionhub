@@ -18,13 +18,15 @@
     margin: 20px 50px;
     cursor: pointer;
 } */
-.main{
+/* .main{
     position: fixed;
     width: 100%;
     z-index: 1;
     margin-bottom: 500px;
-}
+} */
 .nav{
+    max-width: 100%;
+    display: flex;
     cursor: pointer;
 }
 .logo{

@@ -18,7 +18,7 @@ function Nav() {
     };
   
   return (
-    <div className={navStyles.main}>
+    <div className={navStyles.nav}>
       
     <nav className='shadow-lg p-3 mb-5 bg-body rounded'>
       <ul className=' d-flex justify-content-center'>
