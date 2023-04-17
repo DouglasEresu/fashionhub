@@ -59,7 +59,6 @@ function Nav() {
         nav a {
           text-decoration:none;
           padding:5%;
-          height:100%;
         }
         
         nav ul {
@@ -72,7 +71,7 @@ function Nav() {
         nav li {
           margin-right: 0.9rem;
         }
-        
+
         @media (max-width: 500px) {
           nav {
             flex-direction: column;
@@ -85,7 +84,7 @@ function Nav() {
         
           li {
             margin-right: 0;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
           }
         }
       

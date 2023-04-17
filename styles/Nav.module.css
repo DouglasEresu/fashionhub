@@ -1,13 +1,13 @@
 
 .nav{
         display: flex;
+        width: 100%;
         justify-content: space-between;
         align-items: center;   
         cursor: pointer;
    
 }
 .logo{
-    padding: 5%;
     border-radius: 20%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background: linear-gradient(to right, #8e2de2, #b32e7b);
