@@ -56,22 +56,7 @@ function Nav() {
 
       <style jsx>
         {`
-        nav a {
-          text-decoration:none;
-          padding:5%;
-          height:100%;
-        }
         
-        nav ul {
-          display: flex;
-          list-style: none;
-          margin: 0;
-          
-        }
-      
-        nav li {
-          margin-right: 0.9rem;
-        }
         
         .active{
           background: linear-gradient(to right, #8e2de2, #4a00e0);
