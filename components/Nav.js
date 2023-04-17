@@ -91,13 +91,8 @@ function Nav() {
 
         @media (max-width: 500px) {
           nav {
-            position: fixed;
-            top: -300px;
-            width: 100%;
-            padding : 10px;
-            transition: top 0.5s ease;
-            flex-direction: column;
-            align-items: flex-start;
+            position: relative;
+            
           }
           .menu {
             position: absolute;
@@ -112,32 +107,7 @@ function Nav() {
           .menu.open {
             max-height: 300px;
           }
-          nav a{
-            text-decoration: none;
-            padding: 5px 10px;
-            display: block;
-            font-size: 20px;
-            color: #072731
-          }
-          nav.loaded{
-            top: 0;
-          }
-        
-          ul {
-            flex-direction: column;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-        
-          li {
-            display: inline-block
-            margin-right: 0;
-            margin-bottom: 0.5rem;
-          }
-        }
-      
-        }
+          
 
         .active{
           transition: color 0.25s ease, background 0.25s ease;
