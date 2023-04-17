@@ -64,7 +64,6 @@ function Nav() {
         }
         
         nav ul {
-          max-height: 200px;
           display: flex;
           overflow-y: hidden;
           overflow-x: hidden;
@@ -79,29 +78,40 @@ function Nav() {
 
         @media (max-width: 500px) {
           nav {
+            position: fixed;
+            top: -300px;
+            width: 100%;
+            padding : 10px;
+            transition: top 0.5s ease;
             flex-direction: column;
             align-items: flex-start;
           }
 
           nav a{
+            display: block;
             font-size: 20px;
             color: #072731
           }
-          
+          .nav.loaded{
+            top: 0;
+          }
         
           ul {
             flex-direction: column;
-            max-height: 360px;
-            transition: all 3.5s:
+            list-style: none;
+            margin: 0;
+            padding: 0;
           }
         
           li {
+            display: inline-block
             margin-right: 0;
             margin-bottom: 0.5rem;
           }
         }
       
-        
+        }
+
         .active{
           transition: color 0.25s ease, background 0.25s ease;
           background: linear-gradient(to right, #8e2de2, #4a00e0);
