@@ -6,8 +6,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 
 function Nav() {
-var nav = document.getElementById('nav')
-  nav.addEventListener('load', function() {
+
+  this.addEventListener('load', function() {
     var navbar = document.querySelector('.nav');
     navbar.classList.add('loaded');
   });
@@ -100,7 +100,7 @@ var nav = document.getElementById('nav')
             font-size: 20px;
             color: #072731
           }
-          .nav.loaded{
+          nav.loaded{
             top: 0;
           }
         
