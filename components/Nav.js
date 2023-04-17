@@ -7,6 +7,12 @@ import { useRouter } from 'next/router';
 
 function Nav() {
 
+  window.addEventListener('load', function() {
+    var navbar = document.querySelector('.nav');
+    navbar.classList.add('loaded');
+  });
+  
+
   const router =useRouter();
   const currentRoute = router.pathname;
 
@@ -88,6 +94,8 @@ function Nav() {
           }
 
           nav a{
+            text-decoration: none;
+            padding: 5px 10px;
             display: block;
             font-size: 20px;
             color: #072731
