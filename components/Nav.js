@@ -49,7 +49,7 @@ function Nav() {
           <li className='mx-5 nav'>
             <Link href="/cart"><p>
             <a className={currentRoute ==="/cart" ? "active" : "non-active"}>
-              cart({getItemsCount()})</a></p>
+              Cart({getItemsCount()})</a></p>
               </Link>
           </li>
       </ul>
@@ -70,23 +70,27 @@ function Nav() {
         }
       
         nav li {
-          margin-right: 0.9rem;
+          margin-right: 1rem;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
           nav {
             flex-direction: column;
             align-items: flex-start;
           }
 
           nav a{
-            font-size: 15px;
+            font-weight: 400
+            font-size: 20px;
             color: #072731
           }
           
         
           ul {
             flex-direction: column;
+            max-height: 200px;
+            overflow-y: hidden;
+            trasition: all 1.5s:
           }
         
           li {
