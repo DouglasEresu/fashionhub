@@ -24,6 +24,13 @@
     z-index: 1;
     margin-bottom: 500px;
 } */
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
 .nav{
     cursor: pointer;
     max-width: 100%;
