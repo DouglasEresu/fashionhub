@@ -9,9 +9,7 @@
 }
 .nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+    
 }
 .nav ul li a {
     text-decoration: none;
@@ -27,6 +25,9 @@
 .nav{
     max-width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
     cursor: pointer;
 }
 .logo{
