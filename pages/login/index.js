@@ -10,18 +10,11 @@ import styles from '../../styles/CategoryCard.module.css'
 
 const LoginPage = () => {
   const [page, setPage] = useState("login");
-  const router = useRouter();
-  let auth = getAuth();
   
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      console.log(user);
-      typeof window !== "undefined" && router.push("/");
-    }
-  });
+
   return (
     <div className={styles.container}>
-      <a className={Navstyles.logo}>Fashion Hub</a>
+      <a className={Navstyles.logo}>TFH</a>
       <div className={styles.content}>
         <div className={styles.switchContainer}>
           {page === "login" ? <Login /> : <Signup/>}
