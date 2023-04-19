@@ -6,15 +6,12 @@ const reducer = {
 };
 
 const getSavedCart = () => {
-  const cart = localStorage.getItem('cart');
-  if (cart) {
-    try {
-      return JSON.parse(cart);
-    } catch (e) {
-      console.error('Error parsing saved cart:', e);
-    }
+  if (typeof window !== "undefined") {
+    const savedCart = localStorage.getItem('cart');
+    return savedCart ? JSON.parse(savedCart) : [];
+  } else {
+    return [];
   }
-  return [];
 };
 
 const store = configureStore({
