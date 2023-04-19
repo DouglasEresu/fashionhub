@@ -1,4 +1,5 @@
 /*eslint-disable*/
+import { useEffect } from 'react';
 import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
 import {
@@ -22,8 +23,9 @@ const CartPage = () => {
       (accumulator, item) => accumulator + item.quantity * item.price,
       0
     );  
+    
   };
-
+  
   return (
     <div className={styles.container}>
       {cart.length === 0 ? (

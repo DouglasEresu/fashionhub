@@ -13,6 +13,7 @@ const saveCart = (cart) => {
 
 
 const getSavedCart = () => {
+
   if (typeof window !== "undefined") {
     const savedCart = localStorage.getItem('cart');
     return savedCart ? JSON.parse(savedCart) : [];
