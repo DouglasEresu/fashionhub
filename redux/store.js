@@ -1,24 +1,27 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { cartReducer } from './cart.Slice';
-import { persistReducer, persistStore } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 
-// const reducer = {
-//   cart: cartReducer,
-// };
-
-const persistConfig = {
-  key: 'root',
-  storage,
+const reducer = {
+  cart: cartReducer,
 };
 
-const persistedReducer = persistReducer(persistConfig, cartReducer);
+const getSavedCart = () => {
+  const cart = localStorage.getItem('cart');
+  if (cart) {
+    try {
+      return JSON.parse(cart);
+    } catch (e) {
+      console.error('Error parsing saved cart:', e);
+    }
+  }
+  return [];
+};
 
 const store = configureStore({
-  reducer: {
-    cart: persistedReducer,
+  reducer,
+  preloadedState: {
+    cart: getSavedCart(),
   },
 });
-export const persistor = persistStore(store);
 
 export default store;
