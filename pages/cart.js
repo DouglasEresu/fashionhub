@@ -17,14 +17,6 @@ const CartPage = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-// function refreshCart(cart){
-// if(createOrder){
-//   {cart.length === 0};
-// }else{
-//   getTotalPrice
-// }
-// };
-// refreshCart();
   const getTotalPrice = () => {
     return cart.reduce(
       (accumulator, item) => accumulator + item.quantity * item.price,

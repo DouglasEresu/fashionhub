@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 function Navigation() {
 
   
@@ -24,7 +24,6 @@ function Navigation() {
     };
   
     return (
-
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="/"><a className={currentRoute ==="/" }>
@@ -33,7 +32,7 @@ function Navigation() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/home"><a className={currentRoute ==="/login" ? "active" : "non-active"}>
+              <Nav.Link href="/home"><a className={currentRoute ==="/home" ? "active" : "non-active"}>
               Home
               </a></Nav.Link>
               <Nav.Link href="/shop"><a className={currentRoute ==="/shop" ? "active" : "non-active"}>
@@ -50,7 +49,7 @@ function Navigation() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      
     );
 }
 
