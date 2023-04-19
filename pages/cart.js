@@ -33,7 +33,7 @@ const CartPage = () => {
       ) : (
         <>
           <div className={styles.header}>
-            <div>Image alt= ""</div>
+            <div>Image</div>
             <div>Product</div>
             <div>Price</div>
             <div>description</div>
