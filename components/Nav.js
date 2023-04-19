@@ -36,14 +36,14 @@ function Navigation() {
               <Nav.Link href="/home"><a className={currentRoute ==="/login" ? "active" : "non-active"}>
               Home
               </a></Nav.Link>
-              <Nav.Link href="/link"><a className={currentRoute ==="/shop" ? "active" : "non-active"}>
+              <Nav.Link href="/shop"><a className={currentRoute ==="/shop" ? "active" : "non-active"}>
               Shop
               </a></Nav.Link>
                <Nav.Link href="/cart"><p>
               <a className={currentRoute ==="/cart" ? "active" : "non-active"}>
                 Cart({getItemsCount()})</a></p></Nav.Link>
               
-               <Nav.Link href="/link"><a className={currentRoute ==="/login" ? "active" : "non-active"}>
+               <Nav.Link href="/login"><a className={currentRoute ==="/login" ? "active" : "non-active"}>
               Login
               </a></Nav.Link>
             </Nav>
