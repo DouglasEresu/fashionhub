@@ -10,9 +10,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const Navigation = async(e)=> {
-
-  e.preventDefault();
+const Navigation = ()=> {
 
   const router =useRouter();
   const currentRoute = router.pathname;
