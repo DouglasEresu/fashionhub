@@ -1,9 +1,11 @@
 .container {
+    width: 100%;
     padding: 2rem;
     text-align: center;
   }
   
   .header {
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
@@ -15,13 +17,14 @@
     font-size: 1rem;
     font-weight: bold;
     padding-bottom: 0.5rem;
-    padding-right: 10px;
+    padding-right: 5px;
     text-transform: uppercase;
     border-bottom: 2px solid black;
     margin-bottom: 2rem;
   }
   
   .body {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
