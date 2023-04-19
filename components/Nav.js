@@ -8,8 +8,8 @@ import { useRouter } from 'next/router';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-function Navigation() {
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+const Navigation = ()=> {
 
   
   const router =useRouter();
@@ -24,12 +24,7 @@ function Navigation() {
     };
   
     return (
-      <div className={navStyles.nav}>
-
-      <nav className='shadow-lg p-3 mb-5 bg-body rounded'>
-        <ul className=' d-flex justify-content-center'>
-        <li className='mx-5 nav'>
-        <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="/"><a className={currentRoute ==="/" }>
                 <span className={navStyles.logo}>TFH</span> 
@@ -54,43 +49,8 @@ function Navigation() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-            </li>
-            </ul>
-            <style jsx>
-        {`
-        nav a {
-          text-decoration:none;
-          padding:5%;
-          font-size:25px;
-    
-        }
-        
-        nav ul {
-          display: flex;
-          list-style: none;
-          margin: 0;
-          
-        }
       
-        nav li {
-          margin-right: 1rem;
-        }
-        
-          }
-        }
-      
-        }
-        .active{
-          background: linear-gradient(to right, #8e2de2, #4a00e0);
-          color:white;
-          border-radius:15px;
-        }`}
-      </style>
-    </nav>
-    </div>
-    
-  )
-    
+    );
 }
 
 export default Navigation
