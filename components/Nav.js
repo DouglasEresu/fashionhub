@@ -62,7 +62,7 @@ function Nav() {
           text-decoration:none;
           padding:5%;
           font-size:25px;
-          font-weight: 600
+    
         }
         
         nav ul {
