@@ -9,11 +9,14 @@ function MyApp({ Component, pageProps }) {
   
   return(
     <Provider store ={store}>
-       <PersistGate loading={null} persistor={persistor}>
+      
         <Layout>
+           <PersistGate loading={null} persistor={persistor}>
       <Component {...pageProps} />
+    </PersistGate>
     </Layout>
-       </PersistGate>
+     
+      
     
     </Provider>
   ) 
