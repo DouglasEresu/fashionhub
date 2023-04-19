@@ -5,6 +5,13 @@ const reducer = {
   cart: cartReducer,
 };
 
+const saveCart = (cart) => {
+  localStorage.setItem('cart', JSON.stringify(cart));
+  console.log("Cart saved to localStorage:", cart);
+};
+
+
+
 const getSavedCart = () => {
   if (typeof window !== "undefined") {
     const savedCart = localStorage.getItem('cart');
