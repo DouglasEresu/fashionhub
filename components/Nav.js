@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function Nav() {
+function Navigation() {
 
   
   const router =useRouter();
@@ -54,4 +54,4 @@ function Nav() {
     );
 }
 
-export default Nav
+export default Navigation
