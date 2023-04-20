@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
 import{Provider} from 'react-redux'
-
+import { Analytics } from '@vercel/analytics/react';
 import store from '../redux/store'
 
 function MyApp({ Component, pageProps }) {
@@ -11,6 +11,9 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Component {...pageProps} />
     </Layout>
+
+    <Analytics/>
+    
     </Provider>
   ) 
 }
