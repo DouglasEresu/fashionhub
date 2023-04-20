@@ -6,6 +6,7 @@ import { useFormik } from "formik";
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import {app} from '../../config/firebaseConfig'
 
 const Signup = () => {
   //  const navigate = useNavigate()
