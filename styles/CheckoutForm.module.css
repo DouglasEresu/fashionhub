@@ -3,6 +3,16 @@
     padding: 40px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 400px) {
+    .body {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem 1rem;
+    grid-template-rows: 2fr ;
+    place-items: center;
+    }
+  } 
 .body h2{
     text-align: center;
     color:#FFFFFFA6 ;

@@ -19,3 +19,11 @@
     grid-template-columns: 2fr 2fr 2fr 2fr;
     place-items: center;
   }
+  
+  @media screen and (max-width: 400px) {
+    .cards {
+    gap: 1.5rem 0.2rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    place-items: center;
+    }
+  } 
