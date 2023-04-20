@@ -34,9 +34,9 @@
    @media screen and (max-width: 400px) {
     .header div {
   font-size: 15px;
-  font-weight: lighter;
+  font-weight: 400;
   padding-right: 0;
-
+  border-bottom: 1px solid black;
     }
   } 
   .body {

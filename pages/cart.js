@@ -34,7 +34,7 @@ const CartPage = () => {
         <>
           <div className={styles.header}>
             <div>Image</div>
-            <div>Pdt</div>
+            <div>Prdt</div>
             <div>Price</div>
             {/* <div>description</div> */}
             <div>Qty</div>
