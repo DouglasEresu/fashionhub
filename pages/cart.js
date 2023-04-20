@@ -36,7 +36,7 @@ const CartPage = () => {
             <div>Image</div>
             <div>Product</div>
             <div>Price</div>
-            <div>description</div>
+            {/* <div>description</div> */}
             <div>Quantity</div>
             <div>Actions</div>
             <div>Total Price</div>
@@ -48,7 +48,7 @@ const CartPage = () => {
               </div>
               <p>{item.title}</p>
               <p>$ {item.price}</p>
-              <div>
+              {/* <div>
               <Button
                 className=" mt-2"
                 color="default"
@@ -62,7 +62,7 @@ const CartPage = () => {
                 {item.description}
                </PopoverBody>
                </UncontrolledPopover>
-              </div>
+              </div> */}
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
                 <button onClick={() => dispatch(incrementQuantity(item.id))}>
